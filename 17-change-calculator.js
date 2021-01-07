@@ -1,17 +1,18 @@
+let denoms = [
+  {type: "twentyDollar", amount: 2000},
+  {type: "tenDollar", amount: 1000},
+  {type: "fiveDollar", amount: 500},
+  {type: "twoDollar", amount: 200},
+  {type: "oneDollar", amount: 100},
+  {type: "quarter", amount: 25},
+  {type: "dime", amount: 10},
+  {type: "nickel", amount: 5},
+  {type: "penny", amount: 1}
+];
+
 const calculateChange = function(total, cash) {
   
-  let change = {};
-  let denoms = [
-    {type: "twentyDollar", amount: 2000},
-    {type: "tenDollar", amount: 1000},
-    {type: "fiveDollar", amount: 500},
-    {type: "twoDollar", amount: 200},
-    {type: "oneDollar", amount: 100},
-    {type: "quarter", amount: 25},
-    {type: "dime", amount: 10},
-    {type: "nickel", amount: 5},
-    {type: "penny", amount: 1}
-  ];
+  let change = {}; 
     
   let diff = cash - total;
   while (diff > 0) {
